@@ -20,18 +20,18 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"> <img src="images/logo.png" alt="" width="125px"> </a>
+                    <a href="index.php"> <img src="images/logo.png" alt="" width="125px"> </a>
                 </div>
                 <nav>
-                    <ul id="menuitems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Conact</a></li>
-                        <li><a href="Account.html">Account</a></li>
-                    </ul>
+                <ul id="menuitems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="Account.php">Account</a></li>
+                </ul>
                 </nav>
-                <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a>
+                <!-- <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a> -->
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
@@ -51,7 +51,8 @@
     
         <div class="row">
             <div class="col-4">
-                <img src="images/product-1.jpg" alt="">
+            <a href="product details red.php"><img src="images/product-1.jpg" alt=""></a>
+            
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -87,8 +88,9 @@
                 <p>$499.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-4.jpg" alt="">
-                <h4>Blue Printed T-Shirt</h4>
+            <a href="product details blue.php"><img src="images/productb-5.jpg" alt=""></a>
+
+                <h4>Puma Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -138,7 +140,8 @@
                 <p>$499.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-8.jpg" alt="">
+            <a href="smart.php"><img src="images/exclusive.png" alt=""></a>
+
                 <h4>Blue Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -253,7 +256,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2024 - Easy Tutorials</p>
+            <p class="copyright">Copyright © 2024. RedStore</p>
         </div>
     </div>
     

@@ -20,18 +20,18 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-               <a href="index.html"> <img src="images/logo.png" alt="" width="125px"> </a>
+               <a href="index.php"> <img src="images/logo.png" alt="" width="125px"> </a>
             </div>
             <nav>
                 <ul id="menuitems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Conact</a></li>
-                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="Account.php">Account</a></li>
                 </ul>
             </nav>
-           <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a>
+           <!-- <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a> -->
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
@@ -75,8 +75,8 @@
     <h2 class="title">Featured product</h2>
     <div class="row">
         <div class="col-4">
-           <a href="product details.html"> <img src="images/product-1.jpg" alt=""></a>
-           <a href="product details.html" ><h4>Red Printed T-Shirt</h4> </a>
+        <a href="product details blue.php"> <img src="images/productb-5.jpg" alt=""></a>
+           <a href="product details blue.php" ><h4>Red Printed T-Shirt</h4> </a>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -84,11 +84,11 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹250.00</p>
         </div>
         <div class="col-4">
-            <img src="images/product-2.jpg" alt="">
-            <h4>Block Show</h4>
+           <a href="shoe.php"> <img src="images/shoeb-1.jpg" alt=""></a>
+            <h4>Block Shoe</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -96,11 +96,11 @@
                 <i class="fa fa-star-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$2999.00</p>
+            <p>₹2999.00</p>
         </div>
         <div class="col-4">
-            <img src="images/product-3.jpg" alt="">
-            <h4>Block Pant</h4>
+           <a href="shorts.php"> <img src="images/shorts.jpg" alt=""></a>
+            <h4>Sport Shorts</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -108,11 +108,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$499.00</p>
+            <p>₹499.00</p>
         </div>
         <div class="col-4">
-            <img src="images/product-4.jpg" alt="">
-            <h4>Blue Printed T-Shirt</h4>
+        <a href="product watch.php"> <img src="images/watch.jpg" alt=""></a>
+            <h4>Brands Watch</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -120,7 +120,7 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹1999.00</p>
         </div>
     </div>
     <!-- laterst product  -->
@@ -136,7 +136,7 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹250.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-6.jpg" alt="">
@@ -148,7 +148,7 @@
                 <i class="fa fa-star-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$2999.00</p>
+            <p>₹2999.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-7.jpg" alt="">
@@ -160,10 +160,10 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$499.00</p>
+            <p>₹499.00</p>
         </div>
         <div class="col-4">
-            <img src="images/product-8.jpg" alt="">
+        <a href="product details red.php"> <img src="images/product-1.jpg" alt=""></a>
             <h4>Blue Printed T-Shirt</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -172,7 +172,7 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹250.00</p>
         </div>
     </div>
     <div class="row">
@@ -186,7 +186,7 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹250.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-10.jpg" alt="">
@@ -198,7 +198,7 @@
                 <i class="fa fa-star-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$2999.00</p>
+            <p>₹2999.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-11.jpg" alt="">
@@ -210,7 +210,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$499.00</p>
+            <p>₹499.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-12.jpg" alt="">
@@ -222,7 +222,7 @@
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$250.00</p>
+            <p>₹250.00</p>
         </div>
     </div>
 </div>
@@ -232,7 +232,8 @@
     <div class="small-container">
         <div class="row">
             <div class="col-2">
-                <img src="images/exclusive.png" alt="" class="offer-img">
+            <a href="smart.php"><img src="images/exclusive.png" alt="" class="offer-img"></a>
+            
             </div>
             <div class="col-2">
                 <p>Exclusively Available on RedStore</p>
@@ -240,9 +241,9 @@
                 <small>
                     The Mi Smart Brand 4 features a 39.9% larger (than Mi Bnad 3)
                     AMOLED color full-touch display width adjustable bringhtness, 
-                    so everything is clear as can be.
+                    so everything is clear asbe.
                 </small>
-                <a href="" class="btn">Buy Now &#8594;</a>
+                <a href="smart.php" class="btn">Buy Now &#8594;</a>
             </div>
         </div>
     </div>
@@ -368,7 +369,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2024 - Easy Tutorials</p>
+            <p class="copyright">Copyright © 2024. RedStore</p>
         </div>
     </div>
     

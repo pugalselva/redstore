@@ -20,18 +20,18 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"> <img src="images/logo.png" alt="" width="125px"> </a>
+                    <a href="index.php"> <img src="images/logo.png" alt="" width="125px"> </a>
                 </div>
                 <nav>
-                    <ul id="menuitems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Conact</a></li>
-                        <li><a href="Account.html">Account</a></li>
-                    </ul>
+                <ul id="menuitems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="Account.php">Account</a></li>
+                </ul>
                 </nav>
-                <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a>
+                <!-- <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a> -->
                 <img src="images/menu.png" class="menu-icon" 
                 onclick="menutoggle()">
             </div>
@@ -40,44 +40,43 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/gallery-1.jpg" alt="" width="100%"  id="ProductImg">
+                    <img src="images/exclusive.png" alt="" width="100%"  id="ProductImg">
                     
                     <div class="small-img-row">
                         <div class="small-img-col">
-                            <img src="images/gallery-1.jpg" width="100%" class="Small-Img">
+                            <img src="images/exclusive.png" width="100%" class="Small-Img">
                         </div>
                         <div class="small-img-col">
-                            <img src="images/gallery-2.jpg" width="100%" class="Small-Img">
+                            <img src="images/exclusivew-2.jpg" width="100%" class="Small-Img">
                         </div>
                         <div class="small-img-col">
-                            <img src="images/gallery-3.jpg" width="100%" class="Small-Img">
+                            <img src="images/exclusivew.jpg" width="100%" class="Small-Img">
                         </div>
                         <div class="small-img-col">
-                            <img src="images/gallery-4.jpg" width="100%" class="Small-Img">
+                            <img src="images/exclusive-1.jpg" width="100%" class="Small-Img">
                         </div>
                     </div>
                
                
                 </div>
                 <div class="col-2">
-                    <p>Home / T-Shirt</p>
-                    <h1>Red Printer T-Shirt</h1>
-                    <h4>₹249.00</h4>
+                    <p>Home / Smart Watch</p>
+                    <h1>Mi Smart Watch</h1>
+                    <h4>₹2999.00</h4>
                     <select>
-                        <option>Select Size</option>
-                        <option>XXL</option>
-                        <option>XL</option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
+                        <option>Select Color</option>
+                        <option>Orange</option>
+                        <option>white</option>
+                        <option>Red</option>
+                
                     </select>
                     <input type="number" value="1">
-                    <a href="" class="btn">Add to cart</a>
+                    <a href="customer detail.php" class="btn">Buy Now</a>
                     <h3>Product Details<i class="fa fa-indent"></i></h3>
                     <br>
-                    <p>Give your summer wardrobe a style upgrade with the HRX Men Action T-shirt. 
-                        Team it with a pair of shot for your morning working or a denima for an evening out with the guys. 
-
+                    <p>The Mi Smart Brand 4 features a 39.9% larger (than Mi Bnad 3)
+                    AMOLED color full-touch display width adjustable bringhtness, 
+                    so everything is clear asbe.
                     </p>
                 </div>
             </div>
@@ -97,8 +96,8 @@
     <div class="small-container">
         <div class="row">
             <div class="col-4">
-                <img src="images/product-9.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="images/exclusiveb-1.jpg" alt="">
+                <h4>Smart watch 4</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -106,11 +105,11 @@
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$250.00</p>
+                <p>$1999.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-10.jpg" alt="">
-                <h4>Block Show</h4>
+                <img src="images/exclusivew-2.jpg" alt="">
+                <h4>Mi Brand</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -189,7 +188,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2024 - Easy Tutorials</p>
+            <p class="copyright">Copyright © 2024. RedStore</p>
         </div>
     </div>
     

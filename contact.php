@@ -6,8 +6,9 @@
     <title>All Product - RedStore | Ecommerce Website Design</title>
 
     <!-- stylesheet -->
-
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="stylesheet.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,70 +21,40 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"> <img src="images/logo.png" alt="" width="125px"> </a>
+                    <a href="index.php"> <img src="images/logo.png" alt="" width="125px"> </a>
                 </div>
                 <nav>
-                    <ul id="menuitems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Conact</a></li>
-                        <li><a href="Account.html">Account</a></li>
-                    </ul>
+                <ul id="menuitems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="product.php">Product</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="Account.php">Account</a></li>
+                </ul>
                 </nav>
-                <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a>
+                <!-- <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px" alt="icon"> </a> -->
                 <img src="images/menu.png" class="menu-icon" 
                 onclick="menutoggle()">
             </div>
         </div>
 
-        <!-- --------Account-Page------- -->
-        <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/image1.png" alt="Kick The Ball" width="100%">
-                    </div>
-                    <!-- 469 -->
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login()">Login</span>
-                                <span onclick="reg()">Register</span>
-                                <hr id="Indicator">
-                            </div>
-                            <form id="loginForm">
-                                <input type="text" placeholder="Username">
-                                <input type="password" placeholder="Password">
-                                <button type="submit" class="btn">Login</button>
-                                <a href=""> Forgot Password</a>
-                            </form>
-
-                            <form id="RegForm">
-                                <input type="text" placeholder="Username">
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Password">
-                                <button type="submit" class="btn">Register</button>
-                            
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
+      <!-- Contact Page -->
+     <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div  class="contact-left-title">
+                <h2>Contact Us</h2>
+                <hr>
             </div>
+            <input type="hidden" name="access_key" value="3d9f21d6-e824-4dbd-9e71-be51ef41337d">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+            <button type="submit">Submit <img src="images/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="images/right_img.png" alt="">
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
+     </div>
 
 
 
@@ -127,7 +98,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2024 - Easy Tutorials</p>
+            <p class="copyright"></p>
         </div>
     </div>
     
@@ -147,32 +118,6 @@
             }
         }
     </script>
-
-
-<!-- ----------js toggle form ---------  -->
-
-<script>
-    var loginForm = document.getElementById("loginForm");
-    var RegForm = document.getElementById("RegForm");
-
-    var Indicator= document.getElementById("Indicator");
-
-    function reg(){
-        RegForm.style.transform = "translateX(0px)";
-        loginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-
-    }
-    
-    function login(){
-        RegForm.style.transform = "translateX(300px)";
-        loginForm.style.transform = "translateX(300px)";
-        Indicator.style.transform = "translateX(0px)";
-
-    }
-
-
-</script>
 
     
 
