@@ -69,13 +69,15 @@ include ("db.php");
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM `booking`";
+        // $sql = "SELECT * FROM `booking` ";
+        $sql = "SELECT id, ProductName, discount, price, description FROM `booking`";
+
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
           ?>
           <tr>
             <td><?php echo $row["id"] ?></td>
-            <td><?php echo isset($row["ProductName"]) ? $row["ProductName"] : "produ"; ?></td>
+            <td><?php echo $row["ProductName"]?></td>
             <td><?php echo $row["discount"] ?></td>
             <td><?php echo $row["price"] ?></td>
             <td><?php echo $row["description"] ?></td>

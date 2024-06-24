@@ -1,23 +1,28 @@
 <?php
-include("db.php");
-$id=$_GET["id"];
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include ("db.php");
+$id = $_GET["id"];
 
 
-if(isset($_POST["submit"])){
-    // $ProductName=$_POST['ProductName'];
-    $discount=$_POST['discount'];
-    $price=$_POST['price'];
-    $description=$_POST['description'];
+if (isset($_POST["submit"])) {
+  // $ProductName=$_POST['ProductName'];
+  $discount = $_POST['discount'];
+  $price = $_POST['price'];
+  $description = $_POST['description'];
 
-$sql="UPDATE  `booking` SET `discount`='$discount',`price`='$price', `description` ='$description' WHERE id=$id";
+  $sql = "UPDATE `booking` SET `discount`='$discount',`price`='$price', `description` ='$description' WHERE id=$id";
 
-$result = mysqli_query($conn, $sql);
+  $result = mysqli_query($conn, $sql);
 
-if ($result) {
-  header("Location: index1.php?msg=Data updated successfully");
-} else {
-  echo "Failed: " . mysqli_error($conn);
-}
+  if ($result) {
+    header("Location: index1.php?msg=Data updated successfully");
+    exit;
+  } else {
+    echo "Failed: " . mysqli_error($conn);
+  }
 }
 
 ?>
@@ -32,10 +37,13 @@ if ($result) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Edit Product</title>
 </head>
@@ -51,17 +59,21 @@ if ($result) {
     </div>
 
     <?php
-    $sql = "SELECT * FROM `booking` WHERE id = $id LIMIT 1";
+    // $sql = "SELECT * FROM `booking` WHERE id = $id LIMIT 1";
+    $sql = "SELECT ProductName, discount, price, description FROM `booking` WHERE id = $id LIMIT 1";
     $result = mysqli_query($conn, $sql);
+    if (!$result){
+      die("Error:" . mysqli_error($conn));
+    }
     $row = mysqli_fetch_assoc($result);
     ?>
 
     <div class="container d-flex justify-content-center">
       <form action="" method="post" style="width:50vw; min-width:300px;">
-      <div class="mb-3">
+        <div class="mb-3">
           <label class="form-label">ProductName</label>
-          <input type="text" class="form-control" name="ProductName" disabled value="<?php echo $row['ProductName'] ?>" >
-        </div>                                                                        
+          <input type="text" class="form-control" name="ProductName" disabled value="<?php echo $row['ProductName'] ?>">
+        </div>
 
         <div class="row mb-3">
           <div class="col">
@@ -89,7 +101,9 @@ if ($result) {
   </div>
 
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
 </body>
 
